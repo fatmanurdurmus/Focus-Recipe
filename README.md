@@ -1,72 +1,34 @@
-# Focus Recipe
+# Focus Recipe (Odak Planı)
 
-Focus Recipe; kısa odak planları oluşturabileceğin, düzenleyebileceğin ve süresini takip edebileceğin modern bir mini üretkenlik uygulamasıdır.
-
-Bu proje, React + TypeScript + Vite kullanılarak geliştirilmiştir ve eğitim kapsamında istenen CRUD işlemlerini ve modern frontend yapısını uygulamayı amaçlar.
-
----
+Focus Recipe; kısa odak planlarını (başlık, açıklama, süre) ekleyip düzenleyebileceğin mini bir React uygulamasıdır.  
+Planlar **localStorage** ile kaydedilir, sayfa değiştirince veya yenileyince kaybolmaz.
 
 ## Özellikler
+-  Plan ekleme / listeleme / güncelleme / silme
+-  Arama (başlık & açıklama)
+-  Hazır şablon planlar (tek tıkla ekleme)
+-  Timer: start / pause / reset (varsa)
+-  Veriler localStorage’da saklanır
 
-- ✅ Plan Ekleme (Create)
-- 📋 Plan Listeleme (Read)
-- ✏️ Plan Güncelleme (Update)
-- 🗑 Plan Silme (Delete)
-- ⏱ Geri sayım sayacı (Start / Pause / Reset)
-- 💾 LocalStorage ile veri kalıcılığı
-- 📊 Toplam plan ve dakika istatistiği
-- 🎨 Bootstrap 5 ile modern UI
-- 📱 Responsive tasarım
+## Canlı Demo
+- Netlify: https://focus-recipe.netlify.app
 
----
+## Teknolojiler
+- React + TypeScript + Vite
+- Bootstrap 5 + Custom CSS
 
-## 🛠 Kullanılan Teknolojiler
-
-- React
-- TypeScript
-- Vite
-- React Router
-- Bootstrap 5
-- LocalStorage API
-
----
-
-## ⚙️ Kurulum ve Çalıştırma
-
-Projeyi kendi bilgisayarınızda çalıştırmak için:
-
+## Kurulum (Local)
 ```bash
 npm install
 npm run dev
+```
 
-Tarayıcıda:
-
-http://localhost:5173
-
-Proje Yapısı
-src/
- ├── components/
- ├── pages/
- ├── interfaces/
- ├── App.tsx
- ├── main.tsx
-
-
-Components → UI bileşenleri
-
-Pages → Sayfa yapıları
-
-Interfaces → TypeScript tip tanımları
-
-🌍 Canlı Demo
-
-Netlify linki eklenecek.
+## Build
+```bash
+npm run build
+```
+## Notlar
+Bu proje, Web Geliştirme JavaScript eğitimi kapsamında hazırlanmıştır.
 
 
 
-Projenin ekran görüntüsü aşağıda yer almaktadır:
-
-
-📌 Proje Amacı
-
-Bu proje, klasik bir TODO uygulamasını temel alarak modern React mimarisi, component yapısı, state yönetimi ve veri kalıcılığı konularını uygulamalı olarak pekiştirmek amacıyla geliştirilmiştir.
