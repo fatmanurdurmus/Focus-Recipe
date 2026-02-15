@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Focus Recipe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Focus Recipe; kısa odak planları oluşturabileceğin, düzenleyebileceğin ve süresini takip edebileceğin modern bir mini üretkenlik uygulamasıdır.
 
-Currently, two official plugins are available:
+Bu proje, React + TypeScript + Vite kullanılarak geliştirilmiştir ve eğitim kapsamında istenen CRUD işlemlerini ve modern frontend yapısını uygulamayı amaçlar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Özellikler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Plan Ekleme (Create)
+- 📋 Plan Listeleme (Read)
+- ✏️ Plan Güncelleme (Update)
+- 🗑 Plan Silme (Delete)
+- ⏱ Geri sayım sayacı (Start / Pause / Reset)
+- 💾 LocalStorage ile veri kalıcılığı
+- 📊 Toplam plan ve dakika istatistiği
+- 🎨 Bootstrap 5 ile modern UI
+- 📱 Responsive tasarım
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Kullanılan Teknolojiler
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- Vite
+- React Router
+- Bootstrap 5
+- LocalStorage API
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## ⚙️ Kurulum ve Çalıştırma
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Tarayıcıda:
+
+http://localhost:5173
+
+Proje Yapısı
+src/
+ ├── components/
+ ├── pages/
+ ├── interfaces/
+ ├── App.tsx
+ ├── main.tsx
+
+
+Components → UI bileşenleri
+
+Pages → Sayfa yapıları
+
+Interfaces → TypeScript tip tanımları
+
+🌍 Canlı Demo
+
+Netlify linki eklenecek.
+
+
+
+Projenin ekran görüntüsü aşağıda yer almaktadır:
+
+
+📌 Proje Amacı
+
+Bu proje, klasik bir TODO uygulamasını temel alarak modern React mimarisi, component yapısı, state yönetimi ve veri kalıcılığı konularını uygulamalı olarak pekiştirmek amacıyla geliştirilmiştir.
