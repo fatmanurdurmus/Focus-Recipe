@@ -14,14 +14,12 @@ export default function HomePage({ recipes, setRecipes }: Props) {
   // Form state'leri (controlled inputs)
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
-  // ✅ 0 yerine boş başlar, böylece inputta "0" takılı kalmaz
   const [duration, setDuration] = useState<number | "">("");
   const [editingId, setEditingId] = useState<string | null>(null);
 
   // Dashboard için arama
   const [query, setQuery] = useState("");
 
-  // ✅ Silme modalı için (confirm() yerine)
   const [deleteId, setDeleteId] = useState<string | null>(null);
 
   // CREATE
@@ -138,7 +136,7 @@ export default function HomePage({ recipes, setRecipes }: Props) {
     setDuration("");
   }
 
-  // Mini istatistik (abartısız wow)
+  // Mini istatistik 
   const stats = useMemo(() => {
     const total = recipes.length;
     const totalMinutes = recipes.reduce((acc, r) => acc + (r.duration || 0), 0);
@@ -228,7 +226,7 @@ export default function HomePage({ recipes, setRecipes }: Props) {
 
       </div>
 
-      {/* ✅ Silme için güzel modal */}
+      {/*Silme için modal */}
       <ConfirmModal
         title="Planı sil?"
         message="Bu odak planını silersen geri alamazsın."

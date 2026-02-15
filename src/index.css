@@ -1,14 +1,10 @@
-/* -------------------------------------------------------
-   Focus Recipe - Global Styles (Bootstrap + custom)
-   Amaç: modern, yumuşak ve tutarlı bir görünüm
--------------------------------------------------------- */
 
-/* Tasarım değişkenleri (tek :root) */
+/* Tasarım değişkenleri*/
 :root {
-  --p: #6f61c0;   /* ana mor */
-  --p2: #8be8e5;  /* mint */
-  --p3: #a084e8;  /* lila */
-  --p4: #d5ffe4;  /* açık mint */
+  --p: #6f61c0;   
+  --p2: #8be8e5;  
+  --p3: #a084e8;  
+  --p4: #d5ffe4;  
 
   --text: #1f2937;
   --muted: #6b7280;
@@ -77,7 +73,7 @@ a:hover {
   border: 1px solid rgba(17, 24, 39, 0.06) !important;
 }
 
-/* Form inputlar: daha premium görünüm */
+/* Form inputlar */
 .form-control,
 .form-select {
   border-radius: 14px !important;
@@ -91,7 +87,7 @@ a:hover {
   box-shadow: 0 0 0 0.25rem rgba(111, 97, 192, 0.16) !important;
 }
 
-/* Primary buton (Ekle / Start vb) */
+/* Primary buton (Ekle / Start ..) */
 .btn-primary {
   background: linear-gradient(135deg, var(--p), var(--p3)) !important;
   border: none !important;
@@ -123,11 +119,8 @@ a:hover {
   color: var(--p) !important;
 }
 
-/* -------------------------------------------------------
-   ✅ Kaydet / İptal düzeltmesi (senin istediğin kısım)
--------------------------------------------------------- */
 
-/* Kaydet (btn-success) - mint/yeşil premium */
+/* Kaydet */
 .btn-success {
   background: linear-gradient(135deg, var(--p2), #6bd3b3) !important;
   border: none !important;
@@ -147,7 +140,7 @@ a:hover {
   transform: translateY(0px);
 }
 
-/* İptal (outline-danger) - soft kırmızı */
+/* İptal */
 .btn-outline-danger {
   border-radius: 14px !important;
   font-weight: 700;
@@ -160,7 +153,7 @@ a:hover {
   color: rgb(185, 28, 28) !important;
 }
 
-/* Reset (outline-secondary) biraz daha modern */
+/* Reset (outline-secondary) */
 .btn-outline-secondary {
   border-radius: 14px !important;
   font-weight: 700;
@@ -173,7 +166,6 @@ a:hover {
   padding: 0.45rem 0.7rem;
 }
 
-/* Liste item hover: canlılık */
 .list-group-item {
   border-color: rgba(17, 24, 39, 0.06) !important;
 }
@@ -182,7 +174,6 @@ a:hover {
   background: rgba(255, 255, 255, 0.55);
 }
 
-/* Küçük animasyon: kartlar daha modern hissetsin */
 .card,
 .btn {
   transition: transform 0.15s ease, box-shadow 0.15s ease;

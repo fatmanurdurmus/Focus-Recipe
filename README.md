@@ -13,9 +13,20 @@ Planlar **localStorage** ile kaydedilir, sayfa değiştirince veya yenileyince k
 ## Canlı Demo
 - Netlify: https://focus-recipe.netlify.app
 
+<<<<<<< HEAD
 ## Teknolojiler
 - React + TypeScript + Vite
 - Bootstrap 5 + Custom CSS
+=======
+## Kullanılan Teknolojiler
+- React
+- TypeScript
+- Vite
+- React Router
+- Bootstrap 5
+- Custom CSS
+- LocalStorage (tarayıcı tabanlı veri kalıcılığı)
+>>>>>>> 264a7f8 (refactor)
 
 ## Kurulum (Local)
 ```bash

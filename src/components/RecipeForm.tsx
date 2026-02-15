@@ -1,5 +1,5 @@
 type Props = {
-  // Form alanları (controlled inputs)
+  // Form alanları 
   title: string;
   description: string;
   duration: number | "";
@@ -92,7 +92,7 @@ export default function RecipeForm({
           )}
         </div>
 
-        {/* Küçük not: Bu form controlled input kullanır (React state ile yönetilir). */}
+        {/* Bu form controlled input kullanır (React state ile yönetilir). */}
         <div className="small text-muted mt-3">
           İpucu: Plan ekledikten sonra listeden “Düzenle” ile güncelleyebilirsin.
         </div>

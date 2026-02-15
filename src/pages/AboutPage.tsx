@@ -1,7 +1,6 @@
 export default function AboutPage() {
   return (
     <div className="container py-5">
-      {/* Hero Section */}
       <div className="text-center mb-5">
         <h1 className="fw-bold mb-3">About / How it works</h1>
         <p className="lead text-muted mx-auto" style={{ maxWidth: 700 }}>
@@ -10,7 +9,6 @@ export default function AboutPage() {
         </p>
       </div>
 
-      {/* 3 Adımlı Açıklama */}
       <div className="row g-4">
         <div className="col-md-4">
           <div className="card h-100 shadow-sm border-0 about-card">
@@ -49,7 +47,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Extra özgünlük bölümü */}
       <div className="mt-5 text-center">
         <h4 className="fw-semibold mb-3">Neden Focus Recipe?</h4>
         <p className="text-muted mx-auto" style={{ maxWidth: 650 }}>

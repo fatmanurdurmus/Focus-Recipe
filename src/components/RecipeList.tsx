@@ -15,7 +15,7 @@ type Props = {
   onEdit: (recipe: FocusRecipe) => void;
   onDelete: (id: string) => void;
 
-  // ⏱ Timer aksiyonları
+  // Timer aksiyonları
   onStart: (id: string) => void;
   onPause: (id: string) => void;
   onReset: (id: string) => void;
@@ -61,7 +61,7 @@ export default function RecipeList({
 
                 <div className="text-muted small">{recipe.description || "—"}</div>
 
-                {/* ⏱ Kalan süre */}
+                {/* Kalan süre */}
                 <div className="mt-2">
                   <span className="badge text-bg-light">
                     ⏱ {formatTime(recipe.remainingSeconds)}

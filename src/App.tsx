@@ -8,26 +8,26 @@ import type { FocusRecipe } from "./interfaces/FocusRecipe";
 const STORAGE_KEY = "focus_recipes_v1";
 
 export default function App() {
-  // ✅ Veriyi App seviyesinde tutuyoruz: sayfa değişse de kaybolmaz
+  //Veriyi App seviyesinde tutuyoruz: sayfa değişse de kaybolmaz
   const [recipes, setRecipes] = useState<FocusRecipe[]>([]);
 
-  // ✅ İlk açılışta localStorage'dan oku
+  //İlk açılışta localStorage'dan oku
   useEffect(() => {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return;
     try {
       setRecipes(JSON.parse(raw));
     } catch {
-      // bozuk veri varsa yok say
+      //bozuk veri varsa yok say
     }
   }, []);
 
-  // ✅ Her değişiklikte localStorage'a kaydet
+  //Her değişiklikte localStorage'a kaydet
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(recipes));
   }, [recipes]);
 
-    // ⏱ Timer motoru: her saniye çalışan tek interval (sadece 1 plan koşar)
+    //Timer motoru: her saniye çalışan tek interval
   useEffect(() => {
     const timer = setInterval(() => {
       setRecipes((prev) => {
@@ -39,7 +39,7 @@ export default function App() {
 
           const next = Math.max(0, (r.remainingSeconds ?? 0) - 1);
 
-          // 0'a gelince otomatik durdur + tamamlandı işaretle
+          // 0'a gelince otomatik durdur ve tamamlandı işaretle
           if (next === 0) {
             return { ...r, remainingSeconds: 0, isRunning: false, completed: true };
           }
@@ -53,7 +53,6 @@ export default function App() {
   }, []);
 
 
-  // ✅ NavLink için aktif menü stili
   const navClass = ({ isActive }: { isActive: boolean }) =>
     `nav-link ${isActive ? "active-nav" : ""}`;
 
@@ -62,7 +61,6 @@ export default function App() {
       {/* Navbar */}
       <nav className="navbar navbar-expand navbar-light border-bottom sticky-top">
         <div className="container">
-          {/* Brand: SPA uyumlu (Link) */}
           <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
             <span
               className="d-inline-flex align-items-center justify-content-center"
